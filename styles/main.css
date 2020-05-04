@@ -34,7 +34,6 @@
 .link {
   display: inline-block;
   text-decoration: none;
-  font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 12px;
   text-transform: uppercase;
@@ -73,7 +72,6 @@
   margin-top: 50px; }
 
 .card {
-  font-family: "Roboto", sans-serif;
   background: white;
   width: 200px;
   height: 403px;
@@ -109,28 +107,27 @@
         -ms-flex-align: center;
             align-items: center; }
 
-.rate-stars {
+.stars {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   height: 15px; }
+  .stars__star {
+    background-image: url(../images/star.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+    width: 15px;
+    margin-right: 4px; }
 
-.star {
-  background-image: url(../images/star.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 100%;
-  width: 15px;
-  margin-right: 4px; }
-
-.rate-stars--1 .star:nth-child(-n+1),
-.rate-stars--2 .star:nth-child(-n+2),
-.rate-stars--3 .star:nth-child(-n+3),
-.rate-stars--4 .star:nth-child(-n+4),
-.rate-stars--5 .star:nth-child(-n+5) {
+.rate__stars--1 .stars__star:nth-child(-n+1),
+.rate__stars--2 .stars__star:nth-child(-n+2),
+.rate__stars--3 .stars__star:nth-child(-n+3),
+.rate__stars--4 .stars__star:nth-child(-n+4),
+.rate__stars--5 .stars__star:nth-child(-n+5) {
   background-image: url("../images/star-active.svg"); }
 
-.rate-count {
+.rate__count {
   font-size: 11px;
   line-height: 13px;
   font-weight: normal;
@@ -183,5 +180,8 @@
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
+
+html {
+  font-family: "Roboto", sans-serif; }
 
 /*# sourceMappingURL=main.css.map */
