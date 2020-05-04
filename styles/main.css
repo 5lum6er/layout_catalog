@@ -15,7 +15,7 @@
 .logo {
   height: 40px; }
 
-.menu {
+.nav-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -25,13 +25,14 @@
   height: 60px;
   padding-left: 0; }
 
-.menu__item {
+.nav-list__item {
   list-style: none; }
 
-.menu__item:not(:last-child) {
+.nav-list__item:not(:last-child) {
   padding-right: 20px; }
 
 .link {
+  display: inline-block;
   text-decoration: none;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
@@ -39,8 +40,7 @@
   text-transform: uppercase;
   -webkit-transition: 250ms;
   transition: 250ms;
-  color: #000;
-  display: inline-block;
+  color: black;
   line-height: 60px; }
 
 .link:hover,
@@ -73,13 +73,13 @@
   margin-top: 50px; }
 
 .card {
-  background: #fff;
-  border: 1px solid #f3f3f3;
-  border-radius: 5px;
+  font-family: "Roboto", sans-serif;
+  background: white;
   width: 200px;
   height: 403px;
-  padding: 30px 14px 13px;
-  font-family: "Roboto", sans-serif; }
+  border: 1px solid #f3f3f3;
+  border-radius: 5px;
+  padding: 30px 14px 13px; }
   .card:not(:last-child) {
     margin-right: 48px; }
   .card__image {
@@ -90,20 +90,21 @@
   .card__discription {
     font-weight: 500;
     font-size: 12px;
-    line-height: 15px; }
+    line-height: 15px;
+    margin-bottom: 5px; }
   .card__code {
-    font-weight: normal;
     font-size: 11px;
     line-height: 13px;
-    margin-top: 5px; }
+    font-weight: normal;
+    margin-bottom: 15px; }
   .card__rate {
-    margin-top: 15px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    margin-bottom: 20px;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
@@ -130,9 +131,9 @@
   background-image: url("../images/star-active.svg"); }
 
 .rate-count {
-  font-weight: normal;
   font-size: 11px;
   line-height: 13px;
+  font-weight: normal;
   text-align: right; }
 
 .price {
@@ -145,7 +146,7 @@
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  margin-top: 20px; }
+  margin-bottom: 20px; }
   .price__text {
     font-weight: 400;
     font-size: 11px;
@@ -160,19 +161,17 @@
 
 .buy {
   display: inline-block;
+  padding: 12px 57px 11px 58px;
+  height: 40px;
+  border-radius: 5px;
   text-decoration: none;
   font-weight: bold;
   font-size: 14px;
   line-height: 16px;
   text-align: center;
-  color: white;
   text-transform: uppercase;
-  height: 40px;
-  width: 170px;
+  color: white;
   background: #00acdc;
-  border-radius: 5px;
-  margin-top: 20px;
-  padding: 12px 57px 11px 58px;
   -webkit-transition: 250ms;
   transition: 250ms; }
   .buy:hover {
